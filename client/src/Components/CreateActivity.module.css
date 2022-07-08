@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     /* background: #1F1D2B; */
-    background-image: url('https://i.pinimg.com/originals/44/ec/15/44ec15f26ec37e4ba72bb3074a1682d7.jpg');
+    background-image: url('https://originalmap.es/wp-content/uploads/2020/04/Mapamundi-Plexiglas-Transparente-05.jpg');
     background-repeat: no-repeat;
 /* background-position: center center; */
 background-size: cover;
@@ -64,7 +64,7 @@ background-attachment: fixed;
     box-sizing: border-box;
     border-radius: 10px;
     padding-left: 10px;
-  
+  font-size: 19px;
     color: #060303;
 }
 
@@ -109,9 +109,10 @@ p {
     cursor: pointer;
  }
 
+ 
 
 .formLabel {
-    font-family: 'Poppins';
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
@@ -119,7 +120,7 @@ p {
     color: #130909;
 }
 
-.labelSeason { color: rgb(7, 2, 2);}
+.labelSeason { color: rgb(7, 2, 2);  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 
 .selectForm {
     width: 667px;

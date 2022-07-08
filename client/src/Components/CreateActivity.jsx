@@ -179,6 +179,7 @@ export default function CreateActivity() {
         <div className={styles.inputComponent}>
           <label className={styles.formLabel}>Description:</label>
           <input
+          className={styles.inputText}
             type="text"
             value={input.description}
             name="description"

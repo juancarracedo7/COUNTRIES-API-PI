@@ -16,7 +16,7 @@ export const DELETE_ACTIVITY = 'DELETE_ACTIVITY'
 
 export function getAllCountries() {
     return async (dispatch) => {
-        var json = await axios.get("http://localhost:3001/countries");
+        var json = await axios.get("/countries");
         console.log('todos los paises',json.data)
         return dispatch({
             type: "GET_ALL_COUNTRIES",
@@ -29,7 +29,7 @@ export function getAllCountries() {
 
 export function getAllActivities(){
     return async (dispatch) => {
-        var json = await axios.get("http://localhost:3001/activity")
+        var json = await axios.get("/activity")
         console.log('todas las actividades', json.data)
         return dispatch({
             type: 'GET_ALL_ACTIVITIES',
@@ -41,7 +41,7 @@ export function getAllActivities(){
 export function getCountriesName(name){
     return async function(dispatch){
         try {
-           var json = await axios.get(`http://localhost:3001/countries?name=${name}`)
+           var json = await axios.get(`/countries?name=${name}`)
             return dispatch({
                 type: 'GET_COUNTRY_NAME',
                 payload: json.data
@@ -58,7 +58,7 @@ export function postActivity(payload) {
     console.log('payload',payload)
     return async function (dispatch) {
         try {
-            var json = await axios.post("http://localhost:3001/activity", payload)
+            var json = await axios.post("/activity", payload)
        
             dispatch({
                 type: "POST_ACTIVITY",
@@ -76,7 +76,7 @@ export function deleteActivity(id){
     console.log('id actions', id)
     return async function(dispatch){
         try {
-            var json = await axios.delete(`http://localhost:3001/activity/${id}`, id)
+            var json = await axios.delete(`/activity/${id}`, id)
 
             dispatch({
                 type: 'DELETE_ACTIVITY',
@@ -121,7 +121,7 @@ export function orderByAz (payload){
 
 export const getCountryDetail = (id) => async (dispatch) => {
     try {
-        const json = await axios.get(`http://localhost:3001/countries/${id}`); 
+        const json = await axios.get(`/countries/${id}`); 
         console.log('detalles',json.data)
         return dispatch({
             type: 'GET_COUNTRY_DETAILS',
