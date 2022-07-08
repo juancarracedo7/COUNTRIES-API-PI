@@ -5,7 +5,11 @@
     align-items: center;
     justify-content: center;
     /* background: #1F1D2B; */
+<<<<<<< HEAD
     background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9f84e2f5-86e6-42f5-a3c0-584f2ed29ff1/d8yrmwn-c3932627-8493-4564-bb40-4c66e3b3b392.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzlmODRlMmY1LTg2ZTYtNDJmNS1hM2MwLTU4NGYyZWQyOWZmMVwvZDh5cm13bi1jMzkzMjYyNy04NDkzLTQ1NjQtYmI0MC00YzY2ZTNiM2IzOTIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.HrD8dnLpKIcI9DPJPfCOt14_oFanlngtbodOfh9Adbg');
+=======
+    background-image: url('https://originalmap.es/wp-content/uploads/2020/04/Mapamundi-Plexiglas-Transparente-05.jpg');
+>>>>>>> 90b0b14c35c440adc92216d9ece2172403c63b2a
     background-repeat: no-repeat;
 /* background-position: center center; */
 background-size: cover;
@@ -64,7 +68,7 @@ background-attachment: fixed;
     box-sizing: border-box;
     border-radius: 10px;
     padding-left: 10px;
-  
+  font-size: 19px;
     color: #060303;
 }
 
@@ -109,9 +113,10 @@ p {
     cursor: pointer;
  }
 
+ 
 
 .formLabel {
-    font-family: 'Poppins';
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
@@ -119,7 +124,11 @@ p {
     color: #130909;
 }
 
+<<<<<<< HEAD
 .labelSeason { color: rgb(7, 2, 2); background-color: rgb(14, 110, 152); border-radius: 85px;}
+=======
+.labelSeason { color: rgb(7, 2, 2);  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+>>>>>>> 90b0b14c35c440adc92216d9ece2172403c63b2a
 
 .selectForm {
     width: 667px;

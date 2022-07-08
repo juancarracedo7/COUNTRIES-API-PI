@@ -18,7 +18,7 @@ router.get('/', async (req, res,) => {
 
      let countryName = await allCountries.filter((e) =>
        e.name.toLowerCase().includes(name.toLowerCase())
-     ); // pongo includes por si algun personaje tiene 2 nombres
+     ); 
      if (countryName.length) {
        // si encontro nombre
        res.status(200).send(countryName); // devuelvo el nombre del pais
