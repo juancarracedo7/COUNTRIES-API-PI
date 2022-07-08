@@ -23,8 +23,7 @@ export const validate = (input) => {
     errors.description = "Description please";
     errors.required = true;
   } else if (!testSpace.test(input.description)) {
-    errors.description =
-      "Blanks space is not allowed";
+    errors.description = "Blanks space is not allowed";
     errors.required = true;
   }
   if (!input.difficulty) {
@@ -35,8 +34,7 @@ export const validate = (input) => {
     errors.required = true;
   }
   if (!input.duration) {
-    errors.duration =
-      "Number of hours please";
+    errors.duration = "Number of hours please";
     errors.required = true;
   } else if (input.duration < 1 || input.duration > 48) {
     errors.duration = "Acep values from 1 to 48 hs";
@@ -53,7 +51,6 @@ export const validate = (input) => {
   console.log(errors);
   return errors;
 };
-
 
 export default function CreateActivity() {
   const dispatch = useDispatch();
@@ -100,7 +97,6 @@ export default function CreateActivity() {
   }
 
   function handleSelect(e) {
-   
     if (input.countries.includes(e.target.value)) {
       alert("Don't repeat the country");
     } else {
@@ -155,25 +151,18 @@ export default function CreateActivity() {
 
   return (
     <div className={styles.container}>
-      
-     
-      
-      
       <form onSubmit={handleSubmit} className={styles.formComponent}>
         <div className={styles.inputComponent}>
-         
-       
-     
-        <div className={styles.inputComponent}>
-          <label className={styles.formLabel}>Name:</label>
-          <input
-            type="text"
-            value={input.name}
-            name="name"
-            onChange={handleChange}
-            required
-          />
-          {errors.name && <p className={styles.errors}>{errors.name}</p>}
+          <div className={styles.inputComponent}>
+            <label className={styles.formLabel}>Name:</label>
+            <input
+              type="text"
+              value={input.name}
+              name="name"
+              onChange={handleChange}
+              required
+            />
+            {errors.name && <p className={styles.errors}>{errors.name}</p>}
           </div>
         </div>
         <div className={styles.inputComponent}>
@@ -251,7 +240,7 @@ export default function CreateActivity() {
             />
             Autumn
           </label>
-          
+
           <label className={styles.labelSeason}>
             <input
               type="checkbox"
@@ -285,26 +274,27 @@ export default function CreateActivity() {
                   <div>
                     <button onClick={() => onClose(country)}>X</button>
                   </div>
-                  <h4 className={styles.h4}>{country + ', '}</h4>
+                  <div>
+                    <h4 className={styles.h4}>{country + ", "}</h4>
+                  </div>
                 </div>
               );
             })}
           </div>
           <ul></ul>
         </div>
-        <div className={styles.buttonsContainer}>
+        <div>
           <button className={styles.buttonCreate} type="submit">
             Create Activity
           </button>
-          </div>
+
           <div className={styles.buttonsContainer}>
-          <Link to="/home" className={styles.Link}>
-          <button className={styles.buttonCreate}>Return Home</button>
-        </Link>
+            <Link to="/home" className={styles.Link}>
+              <button className={styles.buttonCreate}>Return Home</button>
+            </Link>
           </div>
-        
+        </div>
       </form>
-      
     </div>
   );
 }

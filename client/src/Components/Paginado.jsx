@@ -6,12 +6,12 @@ export default function Paginado({ allCountries,setActualPage}){
     console.log('countrypage',allCountries)
     const pageNumber = []
 
-    const paginado = (pageNumber) => {
-        setActualPage(pageNumber);
-    }
-
+    
     for (let i = 1; i <= Math.ceil(allCountries/10); i++) {
         pageNumber.push(i)
+    }
+    const paginado = (pageNumber) => {
+        setActualPage(pageNumber);
     }
 
     return(
