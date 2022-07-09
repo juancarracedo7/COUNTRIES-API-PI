@@ -167,13 +167,14 @@ p {
 
 .countrySelected {
     display: flex;
-    height: 40px;
-    flex-direction: column;
+    height: 60px;
+    /* flex-direction:row; */
     align-items: center;
     margin: 5px /*10px*/;
 }
 
 .countrySelected h4 {
+    display: flex;
     font-family: 'Montserrat';
     font-size: 20px;
     font-style: normal;
@@ -240,7 +241,3 @@ p {
     cursor: pointer;
 }
 
-.h4{
-   color: #070708;
-   
-}

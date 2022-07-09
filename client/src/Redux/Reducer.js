@@ -26,7 +26,7 @@ const rootReducer = (state = initialState, action) => {
         ...state,
         countries: action.payload,
         allCountries: action.payload,
-        // activities: activitiesFiltered,
+        
       };
     }
     case GET_ALL_ACTIVITIES: {

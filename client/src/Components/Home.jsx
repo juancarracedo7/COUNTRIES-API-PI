@@ -77,7 +77,6 @@ export default function Home(){
     return(
         <div>
         <Loading
-        // countryPage={countryPage}
         />
         </div>
     ) 
@@ -104,7 +103,7 @@ export default function Home(){
           <option value={"default"} hidden>
             Continent
           </option>
-          <option  value="All">Todos</option>
+          <option  value="All">All</option>
           <option value="North America">North America</option>
           <option value="South America">South America</option>
           <option value="Europe">Europe</option>
@@ -117,15 +116,15 @@ export default function Home(){
           <option value={"default"} hidden>
             Population
           </option>
-          <option value="asc">Ascendente</option>
-          <option value="desc">Descendente</option>
+          <option value="asc">Ascendent</option>
+          <option value="desc">Descendent</option>
         </select>
 
         <select onChange={e => handleFilterActivity(e)} className={styles.select}>
           <option value={"default"} hidden>
             Activity
           </option>
-          <option value="All">Todos</option>
+          <option value="All">All</option>
           {activities &&
             activities.map((activity, index) => (
               <option key={index} value={activity.name}>

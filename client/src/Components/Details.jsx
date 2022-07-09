@@ -12,6 +12,7 @@ export default function Details(){
     const specificCountry = useSelector((state) => state.details);
 
     const history= useHistory()
+    
 
     const dispatch = useDispatch();
     
@@ -68,7 +69,7 @@ export default function Details(){
                             <p className={styles.detail}>{specificCountry[0]?.subregion}</p>
                         </div>
                         <div className={styles.details}>
-                            <h4 className={styles.detail}>Área (m2): </h4>
+                            <h4 className={styles.detail}>Area (m2): </h4>
                             <p className={styles.detail}>{specificCountry[0]?.area}</p>
                         </div>
                         <div className={styles.details}>
